@@ -17,7 +17,7 @@
       <body bgcolor="white" text="black">
         <center>
           <br/><br/>
-          <p>The HandyRides</p>
+          <p>Pooli</p>
           <br/><br/>
           <img src="logo.jpg" />
           <br/><br/>
