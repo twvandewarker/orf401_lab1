@@ -10,7 +10,7 @@
       <br /><br />
       <p>PokeLift</p>
       <br />
-      <img src="pikachu_bus.jpg" />
+      <img src="pikachu_bus.jpeg" />
       <br /><br />
 
       <?php
