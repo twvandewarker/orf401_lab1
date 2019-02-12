@@ -13,7 +13,7 @@
       <img src="logo.jpg" />
       <br /><br />
 
-      //Use the ?php command so the server realizes this is PHP code and not HTML
+      <!--Use the <?php command so the server realizes this is PHP code and not HTML-->
       <?php
        
        // Set the variable $q equal to whatever follows the "?query=" in the URL
@@ -36,8 +36,8 @@
       }
 
       // If there was a bad query passed to the PHP script in the URL
-      else if (!isset($query)) {
-         echo '<p>Search text "" not found. Please try again.</p>';
+      else if (!isset($query) || empty($query)) {
+         echo '<p>Search text not found. Please try again.</p>';
       }
 
       // If there was a good query passed to the PHP script in the URL
