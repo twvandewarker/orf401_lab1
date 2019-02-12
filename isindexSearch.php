@@ -50,7 +50,7 @@
       $output = shell_exec($string);
 
       // If nothing is found:
-      if (empty $output) {
+      if (empty($output)) {
       echo '<p>No results found. :( Please try again.</p>';
       }
       
