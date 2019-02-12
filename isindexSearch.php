@@ -7,7 +7,7 @@
 
   <body>
     <center>
-      <br /><br />
+      <br />
       <h1>PokeLift</h1>
       <br />
       <img src="pikachu_bus.jpeg" />
@@ -27,7 +27,6 @@
 
       echo
       '<p>Enter a single origin/destination to search for:</p>
-      <br />
       <form action="isindexSearch.php" method="get">
         <input type="text" name="query" />
         <input type="submit" />
@@ -41,7 +40,7 @@
       // Need to escape q for multi word cities
 
       echo 
-      '<p>Searching for ' . $q . ' as origin/destination</p>
+      '<p>Searching for &quot' . $q . '&quot as origin/destination</p>
       <br /><br />';
 
       $string = "/usr/bin/python search.py riders.dat \"" . $q . "\"";
