@@ -34,8 +34,10 @@
       </form>';
       }
 
-      // If there was a bad query passed to the PHP script in the URL
-      else if (!isset($query) || empty($query)) {
+      // If there was a bad (empty) query passed to the PHP script in the URL
+      if (empty($query)) {
+      echo $query;
+      echo '<b />';
          echo '<p>Search text not found. Please try again.</p>';
       }
 
