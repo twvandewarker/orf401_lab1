@@ -8,9 +8,9 @@
   <body>
     <center>
       <br /><br />
-      <p>Company Name</p>
+      <p>PokeLift</p>
       <br />
-      <img src="logo.jpg" />
+      <img src="pikachu_bus.jpg" />
       <br /><br />
 
       <?php
@@ -23,7 +23,7 @@
 
        // The following echo commands generate standard HTML output for the browser to view.
        // <form action= ""> tells says which page to send the results of the form to.
-       // <input type="text"> denotes a text input, the name="query" part
+      // <input type="text"> denotes a text input, the name="query" part
 
       echo
       '<p>Enter a single origin/destination to search for:</p>
@@ -32,11 +32,6 @@
         <input type="text" name="query" />
         <input type="submit" />
       </form>';
-      }
-
-      // If there was a bad (empty) query passed to the PHP script in the URL
-      else if (empty($q)) {
-         echo '<p>Cannot search for "". Please try again.</p>';
       }
 
       // If there was a good query passed to the PHP script in the URL
@@ -54,9 +49,14 @@
       // Tell the server to run the command, which launches Python, and stores the results in the variable $output
       $output = shell_exec($string);
 
+      // If nothing is found:
+      if (empty $output) {
+      echo '<p>No results found. :( Please try again.</p>';
+      }
+      
       echo $output;
       }
-?>
+      ?>
 </center></body></html>
 
 
