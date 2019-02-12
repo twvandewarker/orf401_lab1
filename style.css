@@ -2,11 +2,11 @@ body {
   background-color: azure;
 }
 
-title {
+h1 {
     text-align: center;
     color: black;
     font-weight: bold;
-    font-family: "Helvetica", sans-serif;
+    font-family: Helvetica, sans-serif;
     font-size: 1.5em;
 }
 

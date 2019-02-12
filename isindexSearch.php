@@ -8,7 +8,7 @@
   <body>
     <center>
       <br /><br />
-      <p>PokeLift</p>
+      <h1>PokeLift</h1>
       <br />
       <img src="pikachu_bus.jpeg" />
       <br /><br />
