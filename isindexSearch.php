@@ -44,8 +44,7 @@
       // Tell the server to run the command, which launches Python, and stores the results in the variable $output
       $output = shell_exec($string);
 
-      echo $output .
-      ;
+      echo $output;
       }
 
       echo '</center></body></html>'
