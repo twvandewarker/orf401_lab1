@@ -35,10 +35,8 @@
       }
 
       // If there was a bad (empty) query passed to the PHP script in the URL
-      if (empty($query)) {
-      echo $query;
-      echo '<b />';
-         echo '<p>Search text not found. Please try again.</p>';
+      else if (empty($q)) {
+         echo '<p>Cannot search for "". Please try again.</p>';
       }
 
       // If there was a good query passed to the PHP script in the URL
