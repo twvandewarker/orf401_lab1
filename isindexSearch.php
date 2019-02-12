@@ -37,18 +37,18 @@
 
       echo 
       '<p>Searching for ' . $q . ' as origin/destination</p>
-       <br /><br />';
+      <br /><br />';
 
-        $string = "/usr/bin/python search.py riders.dat \"" . $q . "\"";
+      $string = "/usr/bin/python search.py riders.dat \"" . $q . "\"";
 
-        // Tell the server to run the command, which launches Python, and stores the results in the variable $output
-        $output = shell_exec($string);
+      // Tell the server to run the command, which launches Python, and stores the results in the variable $output
+      $output = shell_exec($string);
 
-       echo $output .
-       ;
-}
+      echo $output .
+      ;
+      }
 
-echo '</body></html>'
+      echo '</center></body></html>'
 ?>
 
 
