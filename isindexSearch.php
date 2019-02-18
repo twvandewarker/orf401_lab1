@@ -26,7 +26,7 @@
       // <input type="text"> denotes a text input, the name="query" part
 
       echo
-      '<p>Enter a single origin/destination to search for:</p>
+      '<p>Enter a single origin state abbreviation to search for:</p>
       <form action="isindexSearch.php" method="get">
         <input type="text" name="query" />
         <input type="submit" />
@@ -40,10 +40,10 @@
       // Need to escape q for multi word cities
 
       echo 
-      '<p>Searching for &quot' . $q . '&quot as origin/destination</p>
+      '<p>Searching for &quot' . $q . '&quot as origin state.</p>
       <br /><br />';
 
-      $string = "/usr/bin/python search.py riders.dat \"" . $q . "\"";
+      $string = "/usr/bin/python search2.py riders2.dat \"" . $q . "\"";
 
       // Tell the server to run the command, which launches Python, and stores the results in the variable $output
       $output = shell_exec($string);
