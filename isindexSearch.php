@@ -26,7 +26,7 @@
       // <input type="text"> denotes a text input, the name="query" part
 
       echo
-      '<p>Enter a single origin state abbreviation to search for:</p>
+      '<p>Enter a single origin state abbreviation to search for. We currently have participants from CA, NV, and WA.</p>
       <form action="isindexSearch.php" method="get">
         <input type="text" name="query" />
         <input type="submit" />
