@@ -1,5 +1,5 @@
 body {
-  background-color: azure;
+  background-color: paleturquoise;
 }
 
 h1 {
@@ -11,5 +11,7 @@ h1 {
 }
 
 p {
-
+    color: black;
+    font-family: Helvetica, sans-serif;
+    font-size: 1em;
 }
