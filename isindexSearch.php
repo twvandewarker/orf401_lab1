@@ -53,7 +53,7 @@
       echo '<p>No results found. :( Please try again.</p>';
       }
       
-      echo $output;
+      echo " <p>" , $output , "</p>";
       }
       ?>
 </center></body></html>
